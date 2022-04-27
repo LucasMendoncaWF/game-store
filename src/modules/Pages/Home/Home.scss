@@ -1,0 +1,13 @@
+@import 'src/assets/global.scss';
+
+.home {
+  padding: rem(60) 5%;
+
+  @media only screen and (max-width: 900px) {
+    padding: rem(40) 5%;
+  }
+}
+
+.list {
+  margin-top: rem(60);
+}

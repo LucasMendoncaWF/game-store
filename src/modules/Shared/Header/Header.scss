@@ -1,0 +1,83 @@
+@import 'src/assets/global.scss';
+
+.header {
+  background-color: $darker-color;
+  padding: rem(0) rem(25);
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: 900px) {
+    padding: rem(15) rem(25);
+  }
+
+  .links, .navigation, .user-data {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    height: rem(40);
+    margin-right: rem(40);
+  }
+
+  .user-data {
+    .utils-icon {
+      cursor: pointer;
+      margin: 0 rem(20);
+      height: unset;
+      width: rem(25);
+      opacity: 0.7;
+      transition: 0.4s;
+
+      &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+    }
+  }
+  
+  .link-text, ul, ul::after {
+    transition: 0.4s;
+  }
+
+  ul {
+    color: $dark-white;
+    text-align: center;
+    padding: rem(25);
+    margin: 0;
+    cursor: pointer;
+    border-bottom: 2px solid $darker-color;
+    position: relative;
+    text-transform: capitalize;
+    
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      content: '';
+      height: rem(2);
+      width: 0;
+      background-color: $light-white;
+    }
+
+    &:hover .link-text {
+      transform: scale(1.1) rotateZ(3deg);
+    }
+
+    &.selected, &:hover {
+      color: $light-white;
+
+      &::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+
+  .links {
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+}

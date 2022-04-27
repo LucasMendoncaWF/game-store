@@ -1,0 +1,11 @@
+@import 'src/assets/global.scss';
+
+.list {
+  color: $light-white;
+}
+
+.list-title {
+  font-size: rem(30);
+  padding-bottom: rem(5);
+  border-bottom: 2px solid $secondary-color;
+}

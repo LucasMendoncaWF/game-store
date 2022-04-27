@@ -1,0 +1,52 @@
+@import 'src/assets/global.scss';
+
+.banners {
+  color: $light-white;
+  position: relative;
+  overflow: hidden;
+  border-radius: rem(15);
+  box-shadow: 11px 17px 20px 0px #00020a;
+  background-color: $darker-color;
+}
+
+.banners-list {
+  overflow: auto;
+  display: flex;
+  transition: 0.2s;
+}
+
+.arrow {
+  position: absolute;
+  width: rem(50);
+  height: rem(50);
+  top: calc(50% - rem(25));
+  right: rem(5);
+  opacity: 0.7;
+  transition: 0.4s;
+  cursor: pointer;
+  transform: scale(0.9) rotate(180deg);
+
+  @media only screen and (max-width: 900px) {
+    top: rem(175);
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &.left {
+    left: rem(5);
+    right: unset;
+    transform: scale(0.9);
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1) rotate(180deg);
+  }
+}

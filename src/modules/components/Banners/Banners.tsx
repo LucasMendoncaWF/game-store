@@ -46,7 +46,7 @@ const Banners = () => {
           }
         }>
         {banners?.map((banner) => {
-          return <BannerItem banner={banner}></BannerItem>
+          return <BannerItem key={banner.id} banner={banner}></BannerItem>
         })}
         </div>
       : null }

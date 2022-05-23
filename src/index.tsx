@@ -9,6 +9,7 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
+import Footer from './modules/Shared/Footer/Footer';
 
 const App = () => {
 const state = {
@@ -29,6 +30,7 @@ React.useEffect(() => {
         <Route path="/whishlist" element={<Home />} />
         <Route path="/support" element={<Home />} />
       </Routes>
+      <Footer></Footer>
     </section>
   )
 }

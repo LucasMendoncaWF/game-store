@@ -59,32 +59,6 @@
     margin-bottom: rem(30);
   }
 
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    margin: rem(20) 0;
-    margin-bottom: rem(12);
-    height: rem(60);
-    overflow: hidden;
-
-    .tag {
-      height: rem(14);
-      font-size: rem(12);
-      line-height: rem(12);
-      padding: rem(5);
-      background-color: $secondary-color;
-      border-radius: rem(5);
-      cursor: pointer;
-      transition: 0.4s;
-      margin-right: rem(8);
-      margin-bottom: rem(8);
-
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  }
-
   .description {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -97,65 +71,6 @@
       -webkit-line-clamp: 2;
       line-clamp: 2; 
     }
-  }
-
-  .price span {
-    font-size: rem(34);
-  }
-
-  button {
-    width: 100%;
-    height: rem(50);
-    border: none;
-    background-color: $secondary-color;
-    color: $light-white;
-    font-size: rem(14);
-    line-height: rem(14);
-    letter-spacing: rem(2);
-    text-transform: uppercase;
-    transition: 0.4s;
-    cursor: pointer;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-weight: 700;
-
-    &:hover {
-      opacity: 0.8;
-    }
-  }
-
-  .price {
-    font-size: rem(44);
-    line-height: rem(44);
-    color: $secondary-light;
-    position: relative;
-  }
-
-  .full-price {
-    text-decoration: line-through;
-    margin-left: rem(10);
-    color: $dark-white;
-  }
-
-  .discount {
-    position: absolute;
-    font-size: rem(18);
-    line-height: rem(18);
-    font-weight: 700;
-    left: calc(100% + rem(10));
-    top: rem(-12);
-    color: $secondary-light;
-    background-color: $light-white;
-    padding: rem(5);
-    border-radius: rem(5);
-    transform: rotate(8deg);
-  }
-
-  .price-area {
-    display: flex;
-    align-items: baseline;
-    margin: rem(40) 0;
   }
 
   .availability {

@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.scss';
 
 import Banners from '../../components/Banners/Banners';
-import List from '../../components/List/List';
+import HorizontalList from '../../components/Horizontal-list/Horizontal-list';
+import { GamesService } from '/src/services/games.service';
+import { Game } from '/src/interfaces/api-interface';
 
 const Home = () => {
+
+  const [recentGames, setRecentGames]: [Game[], any] = useState([]);
+  const [mostDownloaded, setMostDownloaded]: [Game[], any] = useState([]);
+
+  const getGames = () =>{
+    setRecentGames(GamesService.getRecents());
+    setMostDownloaded(GamesService.getMostDowloaded());
+  };
+
+  useEffect(() => {
+    getGames();
+  }, []);
 
 
   return (
@@ -13,10 +27,10 @@ const Home = () => {
         <Banners></Banners>
       </div>
       <div className='list'>
-        <List title='Novos Lançamentos'></List>
+        <HorizontalList title='New releases' items={recentGames}></HorizontalList>
       </div>
       <div className='list'>
-        <List title='Mais comprados'></List>
+        <HorizontalList title='Top sellers' items={mostDownloaded}></HorizontalList>
       </div>
     </div>
   );

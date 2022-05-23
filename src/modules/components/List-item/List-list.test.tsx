@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import List from './List';
+import List from './List-item';
+import { Game } from '/src/interfaces/api-interface';
 
 test('renders learn react link', () => {
-  render(<List title='test'/>);
+  render(<List game={{} as Game}/>);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });

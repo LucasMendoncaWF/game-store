@@ -34,7 +34,7 @@ export interface Game {
   discount?: number;
   availability?: 'available now' | 'available soon' | Date;
   isBanner?: boolean;
-  users?: number;
+  users: number;
   releaseDate?: Date;
   requirements?: {
     OS: string;

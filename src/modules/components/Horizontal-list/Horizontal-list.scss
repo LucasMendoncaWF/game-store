@@ -1,0 +1,59 @@
+@import 'src/assets/global.scss';
+
+.list {
+  color: $light-white;
+  position: relative;
+}
+
+.list-title {
+  font-size: rem(30);
+  padding-bottom: rem(5);
+  border-bottom: 1px solid $secondary-color;
+  margin-bottom: rem(20);
+}
+
+.list-area {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.list-items {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: 0.3s;
+}
+
+.arrow-list {
+  position: absolute;
+  width: rem(30);
+  height: rem(50);
+  top: rem(-10);
+  right: rem(5);
+  transition: 0.4s;
+  cursor: pointer;
+  transform: scale(0.9) rotate(180deg);
+
+  img {
+    width: 100%;
+  }
+
+  &.left {
+    right: rem(35);
+    top: rem(8);
+    transform: scale(0.9);
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1) rotate(180deg);
+  }
+}
+
+.see-more {
+  color: $dark-white;
+  text-decoration: underline;
+}

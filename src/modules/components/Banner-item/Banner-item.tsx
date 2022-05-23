@@ -28,7 +28,7 @@ const BannerItem = (props: Banners) => {
           <div className='description'>{banner.description}</div>
           <div className='tags'>
             {banner.tags?.map((tag: string) => 
-              <div className='tag'>{tag}</div>
+              <div key={tag} className='tag'>{tag}</div>
             )}
           </div>
           <div className='price-area'>

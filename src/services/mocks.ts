@@ -1,7 +1,19 @@
 import { Game } from "../interfaces/api-interface";
-import darksouls from '/src/assets/images/darksouls.jpg';
-import eldenRing from '/src/assets/images/elden-ring.jpg';
-import reVillage from '/src/assets/images/re-village.jpg';
+import darksouls from '/src/assets/images/games/darksouls.jpg';
+import eldenRing from '/src/assets/images/games/elden-ring.jpg';
+import reVillage from '/src/assets/images/games/re-village.jpg';
+import biomutant from '/src/assets/images/games/biomutant.jpg';
+import cod from '/src/assets/images/games/cod.jpg';
+import cod3 from '/src/assets/images/games/cod-3.jpg';
+import cuphead from '/src/assets/images/games/cuphead.jpg';
+import detroit from '/src/assets/images/games/detroit.jpg';
+import fallGuys from '/src/assets/images/games/fall-guys.jpg';
+import farmingSimulator from '/src/assets/images/games/farming-simulator.jpg';
+import fifa22 from '/src/assets/images/games/fifa-22.jpg';
+import gtaV from '/src/assets/images/games/gtaV.jpg';
+import outerWilds from '/src/assets/images/games/outer-wilds.jpg';
+import planetZoo from '/src/assets/images/games/planet-zoo.jpg';
+import seaOfThieves from '/src/assets/images/games/sea-of-thieves.jpg';
 
 export const games: Game[] = [
   {
@@ -14,26 +26,161 @@ export const games: Game[] = [
     availability: 'available now',
     originalPrice: 150.99,
     isBanner: true,
+    users: 2,
   },
   {
     image: reVillage,
     name: 'Resident Evil: Village',
     description: 'Experience survival horror like never before in the 8th major installment in the Resident Evil franchise - Resident Evil Village. With detailed graphics, intense first-person action and masterful storytelling, the terror has never felt more realistic.',
-    id: 1,
+    id: 2,
     price: 45,
     tags: ['Horror', 'Survival', 'SinglePlayer', 'Action', 'Adventure'],
     originalPrice: 90.99,
     isBanner: true,
+    users: 6,
   },
   {
     image: eldenRing,
     name: 'Elden Ring',
     description: 'THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between',
-    id: 1,
+    id: 3,
     price: 250.30,
     tags: ['RPG', 'Souls Like', 'Fantasy', 'Co-op', 'Multiplayer', 'Singleplayer', 'Action', 'Adventure'],
     availability: new Date('11-20-2022'),
     originalPrice: 300.99,
     isBanner: true,
-  }
+    users: 3,
+  },
+  {
+    image: biomutant,
+    name: 'Biomutant',
+    description: '',
+    id: 4,
+    price: 250.30,
+    tags: ['RPG', 'Souls Like', 'Fantasy', 'Co-op', 'Multiplayer', 'Singleplayer', 'Action', 'Adventure'],
+    availability: new Date('05-20-2022'),
+    isBanner: false,
+    users: 8,
+  },
+  {
+    image: cod,
+    name: 'Call of Duty',
+    description: '',
+    id: 5,
+    price: 250.30,
+    tags: ['RPG', 'Souls Like', 'Fantasy', 'Co-op', 'Multiplayer', 'Singleplayer', 'Action', 'Adventure'],
+    availability: new Date('04-20-2022'),
+    isBanner: false,
+    users: 10,
+  },
+  {
+    image: cod3,
+    name: 'Call of Duty - Black Opps 3',
+    description: '',
+    id: 6,
+    price: 250.30,
+    tags: ['RPG', 'Souls Like', 'Fantasy', 'Co-op', 'Multiplayer', 'Singleplayer', 'Action', 'Adventure'],
+    availability: new Date('05-20-2022'),
+    isBanner: false,
+    users: 12,
+  },
+  {
+    image: cuphead,
+    name: 'CUPHEAD',
+    description: '',
+    id: 7,
+    price: 250.30,
+    tags: ['RPG', 'Souls Like', 'Fantasy', 'Co-op', 'Multiplayer', 'Singleplayer', 'Action', 'Adventure'],
+    availability: new Date('04-20-2022'),
+    isBanner: false,
+    users: 4,
+  },
+  {
+    image: detroit,
+    name: 'Detroit Become Human',
+    description: '',
+    id: 8,
+    price: 250.30,
+    tags: ['RPG', 'Souls Like', 'Fantasy', 'Co-op', 'Multiplayer', 'Singleplayer', 'Action', 'Adventure'],
+    availability: new Date('05-20-2022'),
+    isBanner: false,
+    users: 2,
+  },
+  {
+    image: fallGuys,
+    name: 'Fall Guys',
+    description: '',
+    id: 9,
+    price: 250.30,
+    tags: ['RPG', 'Souls Like', 'Fantasy', 'Co-op', 'Multiplayer', 'Singleplayer', 'Action', 'Adventure'],
+    availability: new Date('11-20-2021'),
+    isBanner: false,
+    users: 20,
+  },
+  {
+    image: farmingSimulator,
+    name: 'Farming Simulator 22',
+    description: '',
+    id: 10,
+    price: 250.30,
+    tags: ['RPG', 'Souls Like', 'Fantasy', 'Co-op', 'Multiplayer', 'Singleplayer', 'Action', 'Adventure'],
+    availability: new Date('11-20-2021'),
+    isBanner: false,
+    users: 3,
+  },
+  {
+    image: fifa22,
+    name: 'Fifa 22',
+    description: '',
+    id: 11,
+    price: 250.30,
+    tags: ['RPG', 'Souls Like', 'Fantasy', 'Co-op', 'Multiplayer', 'Singleplayer', 'Action', 'Adventure'],
+    availability: new Date('11-20-2021'),
+    isBanner: false,
+    users: 5,
+  },
+  {
+    image: outerWilds,
+    name: 'Outer Wilds',
+    description: '',
+    id: 12,
+    price: 250.30,
+    tags: ['RPG', 'Souls Like', 'Fantasy', 'Co-op', 'Multiplayer', 'Singleplayer', 'Action', 'Adventure'],
+    availability: new Date('11-20-2021'),
+    isBanner: false,
+    users: 8,
+  },
+  {
+    image: planetZoo,
+    name: 'Planet Zoo',
+    description: '',
+    id: 13,
+    price: 250.30,
+    tags: ['RPG', 'Souls Like', 'Fantasy', 'Co-op', 'Multiplayer', 'Singleplayer', 'Action', 'Adventure'],
+    availability: new Date('11-20-2021'),
+    isBanner: false,
+    users: 4,
+  },
+  {
+    image: seaOfThieves,
+    name: 'Sea of Thieves',
+    description: '',
+    id: 14,
+    price: 250.30,
+    tags: ['RPG', 'Souls Like', 'Fantasy', 'Co-op', 'Multiplayer', 'Singleplayer', 'Action', 'Adventure'],
+    availability: new Date('11-20-2021'),
+    isBanner: false,
+    users: 2,
+  },
+  {
+    image: gtaV,
+    name: 'GTA V',
+    description: '',
+    id: 15,
+    price: 250.30,
+    tags: ['RPG', 'Souls Like', 'Fantasy', 'Co-op', 'Multiplayer', 'Singleplayer', 'Action', 'Adventure'],
+    availability: new Date('11-20-2021'),
+    isBanner: false,
+    users: 8,
+  },
 ];

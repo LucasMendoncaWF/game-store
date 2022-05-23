@@ -1,0 +1,74 @@
+@import 'src/assets/global.scss';
+
+.game-item-bg {
+  min-width: rem(300);
+  margin-right: rem(40);
+  background-color: $darker-color;
+  border-radius: rem(8);
+  background-color: rgb(145 0 67 / 30%);
+  margin-bottom: rem(30);
+  transform: translate(rem(11), rem(11));
+
+  .game-item {
+    transform: translate(rem(-11), rem(-11));
+    background-color: $darker-color;
+    padding: rem(8);
+    border-radius: rem(8);
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: translate(0, 0);
+
+      button {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  .game-name {
+    font-size: rem(24);
+    margin: rem(10) 0;
+  }
+
+  .tags {
+    height: rem(30);
+  }
+
+  .price, .price span{
+    font-size: rem(22);
+  }
+
+  .price-area {
+    margin-bottom: rem(0);
+    margin-top: rem(20);
+  }
+
+  .discount {
+    position: absolute;
+    font-size: rem(13);
+    background-color: unset;
+    border: rem(2) solid $secondary-light;
+    left: calc(100% + rem(60));
+    padding: rem(2);
+  }
+
+  .item-button {
+    position: relative;
+    margin-top: rem(5);
+    width: 100%;
+    border-radius: rem(8);
+    height: rem(35);
+  }
+}
+
+.game-image {
+  width: 100%;
+  height: rem(200);
+  background-position: center;
+  background-size: cover;
+}

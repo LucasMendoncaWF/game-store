@@ -14,6 +14,6 @@ export const GamesService = {
   },
 
   getMostDowloaded: function(): Game[] {
-    return games.sort((gameA, gameB) => gameA.users > gameB.users ? 1 : 0 ).slice(0, 8);
+    return games.sort((gameA, gameB) => gameA.users > gameB.users ? 1 : 0 );
   },
 }

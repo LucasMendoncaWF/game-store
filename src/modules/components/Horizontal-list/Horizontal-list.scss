@@ -19,7 +19,7 @@
 
 .list-items {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   transition: 0.3s;
 }
 
@@ -56,4 +56,20 @@
 .see-more {
   color: $dark-white;
   text-decoration: underline;
+}
+
+.see-more-item {
+  width: rem(300);
+  height: rem(435);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background-size: cover;
+  overflow: hidden;
+  font-size: rem(25);
+  padding: 0 rem(20);
+  cursor: pointer;
+  border-radius: rem(8);
+  margin-left: rem(40);
+  text-transform: capitalize;
 }

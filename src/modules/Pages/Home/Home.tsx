@@ -12,8 +12,8 @@ const Home = () => {
   const [mostDownloaded, setMostDownloaded]: [Game[], any] = useState([]);
 
   const getGames = () =>{
-    setRecentGames(GamesService.getRecents());
-    setMostDownloaded(GamesService.getMostDowloaded());
+    setRecentGames(GamesService.getRecents().slice(0, 6));
+    setMostDownloaded(GamesService.getMostDowloaded().slice(0, 6));
   };
 
   useEffect(() => {
